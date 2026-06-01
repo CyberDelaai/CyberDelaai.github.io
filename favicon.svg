@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1" result="b1"/>
+      <feGaussianBlur stdDeviation="2.6" result="b2"/>
+      <feGaussianBlur stdDeviation="5.5" result="b3"/>
+      <feGaussianBlur stdDeviation="10" result="b4"/>
+      <feMerge>
+        <feMergeNode in="b4"/>
+        <feMergeNode in="b3"/>
+        <feMergeNode in="b3"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" fill="#000"/>
+  <text x="32" y="33" filter="url(#glow)" fill="#fcee0a"
+        font-family="'JetBrains Mono','Courier New',monospace" font-weight="700"
+        font-size="34" letter-spacing="-1"
+        text-anchor="middle" dominant-baseline="central">//_</text>
+</svg>
