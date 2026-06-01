@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CYBERDECK.TOOLS — netrunner toolkit</title>
+<meta name="description" content="A deck of cyberpunk / TTRPG tools: dialog constructor, calendar generator, and a map utility." />
+<link rel="canonical" href="https://cyberdeck.tools/" />
+<meta property="og:title" content="CYBERDECK.TOOLS" />
+<meta property="og:description" content="A deck of cyberpunk / TTRPG tools." />
+<meta property="og:url" content="https://cyberdeck.tools/" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --yellow: #fcee0a;
+    --cyan: #00f0ff;
+    --magenta: #ff003c;
+    --bg: #050507;
+    --panel: #0b0b10;
+    --text: #e8e8ee;
+    --dim: #7a7a88;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.5;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(0,240,255,0.03) 0 1px, transparent 1px 3px);
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px 64px; width: 100%; flex: 1; }
+  header { border-bottom: 1px solid rgba(252,238,10,0.25); padding-bottom: 20px; margin-bottom: 8px; }
+  .logo {
+    font-family: 'Tektur', sans-serif;
+    font-weight: 700;
+    font-size: clamp(32px, 7vw, 64px);
+    letter-spacing: 4px;
+    color: var(--yellow);
+    text-shadow: 2px 0 var(--magenta), -2px 0 var(--cyan);
+  }
+  .tagline { color: var(--dim); font-size: 13px; letter-spacing: 2px; margin-top: 8px; text-transform: uppercase; }
+  .grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    position: relative;
+    display: block;
+    background: var(--panel);
+    border: 1px solid rgba(0,240,255,0.3);
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+    padding: 22px 22px 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color .15s, transform .15s;
+  }
+  .card.live:hover { border-color: var(--yellow); transform: translateY(-2px); }
+  .card .name { font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 2px; color: var(--cyan); }
+  .card.live .name { color: var(--yellow); }
+  .card .desc { color: var(--dim); font-size: 13px; margin-top: 10px; min-height: 38px; }
+  .card .status { margin-top: 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+  .card.live .status { color: var(--cyan); }
+  .card.soon { opacity: .6; cursor: default; }
+  .card.soon .status { color: var(--magenta); }
+  .blink { animation: blink 1.2s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  footer { text-align: center; color: var(--dim); font-size: 11px; letter-spacing: 1px; padding: 24px; border-top: 1px solid rgba(122,122,136,0.2); }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">CYBERDECK<span style="color:var(--magenta)">.</span>TOOLS</div>
+      <div class="tagline">// netrunner toolkit — load a program</div>
+    </header>
+
+    <main class="grid">
+      <a class="card live" href="/commlink-ui/">
+        <div class="name">COMMLINK</div>
+        <div class="desc">Cyberpunk dialog / chat screenshot constructor. 8 languages, PNG export.</div>
+        <div class="status">▸ online <span class="blink">_</span></div>
+      </a>
+
+      <div class="card soon">
+        <div class="name">CHRONOS</div>
+        <div class="desc">Cyberpunk-style calendar generator.</div>
+        <div class="status">▸ compiling…</div>
+      </div>
+
+      <div class="card soon">
+        <div class="name">GRIDMAP</div>
+        <div class="desc">TTRPG map utility for tabletop sessions.</div>
+        <div class="status">▸ compiling…</div>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    CYBERDECK.TOOLS // <a href="https://github.com/CyberDelaai">github.com/CyberDelaai</a>
+  </footer>
+</body>
+</html>
