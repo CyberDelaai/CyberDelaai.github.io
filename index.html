@@ -111,6 +111,70 @@
   @keyframes blink { 50% { opacity: 0; } }
   footer { text-align: center; color: var(--dim); font-size: 11px; letter-spacing: 1px; padding: 24px; border-top: 1px solid rgba(122,122,136,0.2); }
   footer a { color: var(--dim); }
+
+  /* Donate button — fixed bottom-right "ghost" link. Invisible by default,
+     occasionally glitches into view for a split second (donateGhost loop);
+     on hover/focus it materializes through a short heavy glitch burst and
+     stays visible. steps(1) makes every change abrupt, CRT-glitch style.
+     NOTE: augmented-ui owns this element's clip-path, so the glitch only
+     animates opacity / transform / text-shadow — never clip-path. */
+  .donate {
+    position: fixed;
+    right: 28px;
+    bottom: 84px; /* clears the footer strip */
+    z-index: 50;
+    padding: 12px 20px;
+    background-color: var(--panel);
+    color: var(--yellow);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0;
+    --aug-border-all: 2px;
+    --aug-border-bg: var(--yellow);
+    --aug-inlay-all: 0px;
+    --aug-inlay-bg: var(--panel);
+    --aug-tl: 8px;
+    --aug-br: 8px;
+    animation: donateGhost 11s steps(1) infinite;
+  }
+  .donate:hover,
+  .donate:focus-visible {
+    animation: donateGlitchIn 0.5s steps(1) both;
+    background-color: rgba(252, 238, 10, 0.12);
+  }
+  /* Idle teaser — dark for most of the loop, then one brief flicker burst. */
+  @keyframes donateGhost {
+    0%   { opacity: 0; transform: none; text-shadow: none; }
+    84%  { opacity: 0.9; transform: translate(-3px, 1px); text-shadow: 3px 0 var(--magenta), -3px 0 var(--cyan); }
+    85%  { opacity: 0; transform: none; text-shadow: none; }
+    87%  { opacity: 0.6; transform: translate(2px, -2px) skewX(8deg); text-shadow: -3px 0 var(--cyan), 3px 0 var(--magenta); }
+    88%  { opacity: 0; transform: none; text-shadow: none; }
+    89%  { opacity: 0.8; transform: translate(-1px, 0); text-shadow: 2px 0 var(--magenta), -2px 0 var(--cyan); }
+    91%  { opacity: 0; transform: none; text-shadow: none; }
+    100% { opacity: 0; }
+  }
+  /* Hover materialization — heavy RGB-split jitter settling to solid. */
+  @keyframes donateGlitchIn {
+    0%   { opacity: 0; transform: none; text-shadow: none; }
+    10%  { opacity: 1; transform: translate(-5px, 3px) skewX(-10deg); text-shadow: 4px 0 var(--magenta), -4px 0 var(--cyan); }
+    20%  { opacity: 0.2; transform: translate(4px, -2px); text-shadow: none; }
+    30%  { opacity: 1; transform: translate(-3px, -3px) skewX(12deg); text-shadow: -4px 0 var(--magenta), 4px 0 var(--cyan); }
+    45%  { opacity: 0.4; transform: translate(5px, 2px); text-shadow: 2px 0 var(--cyan); }
+    60%  { opacity: 1; transform: translate(-2px, 1px) skewX(-6deg); text-shadow: 3px 0 var(--magenta), -3px 0 var(--cyan); }
+    75%  { opacity: 0.7; transform: translate(1px, -1px); text-shadow: -2px 0 var(--magenta), 2px 0 var(--cyan); }
+    100% { opacity: 1; transform: none; text-shadow: none; }
+  }
+  /* Touch devices have no hover — keep the button dimly visible instead. */
+  @media (hover: none) {
+    .donate { animation: none; opacity: 0.35; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .donate { animation: none; opacity: 0.3; }
+    .donate:hover, .donate:focus-visible { animation: none; opacity: 1; }
+  }
 </style>
 </head>
 <body>
@@ -152,6 +216,8 @@
       </div>
     </main>
   </div>
+
+  <a class="donate" href="https://boosty.to/cyberdelaai/donate" target="_blank" rel="noopener noreferrer" data-augmented-ui="tl-clip br-clip border">&gt; DONATE_</a>
 
   <footer>
     CYBERDECK.TOOLS (c) // 2026 // <a href="https://github.com/CyberDelaai">CYBERDELAAI</a> // <a href="https://github.com/CyberDelaai/CyberDelaai.github.io/blob/main/LICENSE">MIT</a>
