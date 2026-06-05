@@ -6,7 +6,6 @@ Items are removed from the list once they are implemented / resolved (no archive
 ## ITEMS
 
 1. Revisit style to use augmented-ui
-2. Make footer to have an info about license like in commlink and chronos
-3. Add SIN creator
-4. Add token tool
-5. Add donate button, remove donate buttons from other pages
+2. Add SIN creator
+3. Add token tool
+4. Add donate button, remove donate buttons from other pages
