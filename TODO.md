@@ -5,4 +5,3 @@ Items are removed from the list once they are implemented / resolved (no archive
 
 ## ITEMS
 
-1. Add donate button, remove donate buttons from other pages
