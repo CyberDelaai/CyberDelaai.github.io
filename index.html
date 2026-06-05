@@ -23,7 +23,8 @@
 <meta name="twitter:image" content="https://cyberdeck.tools/tools-preview.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css" />
 <style>
   :root {
     --yellow: #fcee0a;
@@ -37,21 +38,33 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body { height: 100%; }
   body {
-    background: var(--bg);
+    background:
+      radial-gradient(ellipse at top, rgba(252, 238, 10, 0.05), transparent 60%),
+      radial-gradient(ellipse at bottom, rgba(0, 240, 255, 0.05), transparent 60%),
+      var(--bg);
     color: var(--text);
     font-family: 'JetBrains Mono', monospace;
     line-height: 1.5;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-image:
-      repeating-linear-gradient(0deg, rgba(0,240,255,0.03) 0 1px, transparent 1px 3px);
+  }
+  /* Scanline overlay — fixed and on top of ALL content (CRT screen effect),
+     pointer-events off so it never blocks clicks on the cards. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,240,255,0.03) 0 1px, transparent 1px 3px);
+    z-index: 9999;
   }
   .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px 64px; width: 100%; flex: 1; }
   header { border-bottom: 1px solid rgba(252,238,10,0.25); padding-bottom: 20px; margin-bottom: 8px; }
+  /* Share Tech Mono only ships weight 400. */
   .logo {
-    font-family: 'Tektur', sans-serif;
-    font-weight: 700;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
     font-size: clamp(32px, 7vw, 64px);
     letter-spacing: 4px;
     color: var(--yellow);
@@ -64,22 +77,33 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 18px;
   }
+  /* Tool cards — shaped via augmented-ui (clipped corners + 1px border),
+     same recipe as commlink panels. */
   .card {
+    /* cyan border at commlink's accent strength (rgba .5) */
+    --card-border: rgba(0, 240, 255, 0.5);
     position: relative;
-    display: block;
-    background: var(--panel);
-    border: 1px solid rgba(0,240,255,0.3);
-    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+    display: flex;
+    flex-direction: column;
+    background-color: var(--panel);
     padding: 22px 22px 20px;
     text-decoration: none;
     color: var(--text);
-    transition: border-color .15s, transform .15s;
+    transition: transform .15s;
+    --aug-border-all: 2px;
+    --aug-border-bg: var(--card-border);
+    --aug-inlay-all: 0px;
+    --aug-inlay-bg: var(--panel);
+    --aug-tl: 14px;
+    --aug-br: 14px;
   }
-  .card.live:hover { border-color: var(--yellow); transform: translateY(-2px); }
-  .card .name { font-family: 'Tektur', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 2px; color: var(--cyan); }
+  .card.live:hover { --card-border: var(--yellow); transform: translateY(-2px); }
+  .card .name { font-family: 'Share Tech Mono', monospace; font-weight: 400; font-size: 22px; letter-spacing: 2px; color: var(--cyan); }
   .card.live .name { color: var(--yellow); }
-  .card .desc { color: var(--dim); font-size: 13px; margin-top: 10px; min-height: 38px; }
-  .card .status { margin-top: 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+  .card .desc { color: var(--dim); font-size: 13px; margin-top: 10px; }
+  /* margin-top:auto pins the status line to the bottom of the card so all
+     statuses align across the grid row regardless of description length. */
+  .card .status { margin-top: auto; padding-top: 16px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
   .card.live .status { color: var(--cyan); }
   .card.soon { opacity: .6; cursor: default; }
   .card.soon .status { color: var(--magenta); }
@@ -92,25 +116,25 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="logo">CYBERDECK<span style="color:var(--magenta)">.</span>TOOLS</div>
+      <div class="logo">&gt; CYBERDECK<span style="color:var(--magenta)">.</span>TOOLS_</div>
       <div class="tagline">// netrunner toolkit — load a program</div>
     </header>
 
     <main class="grid">
-      <a class="card live" href="/commlink-ui/">
-        <div class="name">COMMLINK</div>
+      <a class="card live" href="/commlink-ui/" data-augmented-ui="tl-clip br-clip border">
+        <div class="name">&gt; COMMLINK_</div>
         <div class="desc">Cyberpunk dialog / chat screenshot constructor. 8 languages, PNG export.</div>
         <div class="status">▸ online <span class="blink">_</span></div>
       </a>
 
-      <a class="card live" href="/chronos-ui/">
-        <div class="name">CHRONOS</div>
+      <a class="card live" href="/chronos-ui/" data-augmented-ui="tl-clip br-clip border">
+        <div class="name">&gt; CHRONOS_</div>
         <div class="desc">Cyberpunk calendar constructor. Different colors, PNG export.</div>
         <div class="status">▸ online <span class="blink">_</span></div>
       </a>
 
-      <div class="card soon">
-        <div class="name">GRIDMAP</div>
+      <div class="card soon" data-augmented-ui="tl-clip br-clip border">
+        <div class="name">&gt; GRIDMAP_</div>
         <div class="desc">TTRPG map utility for tabletop sessions.</div>
         <div class="status">▸ compiling…</div>
       </div>
