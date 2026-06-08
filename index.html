@@ -6,13 +6,12 @@
 <title>CYBERDECK.TOOLS — netrunner toolkit</title>
 <meta name="description" content="A deck of cyberpunk / TTRPG tools: dialog constructor, calendar generator, and a map utility." />
 <link rel="canonical" href="https://cyberdeck.tools/" />
-<!-- favicons: .ico + PNG (48px multiples) for Google Search results, SVG for modern browsers -->
-<!-- ico (sizes=any) is the Google Search / legacy fallback; SVG is preferred
-     by modern browsers for the tab. No explicit PNG <link>s, or Chrome would
-     pick a raster over the SVG. -->
-<link rel="icon" href="/icons/favicon.ico" sizes="any" />
-<link rel="icon" type="image/svg+xml" href="/icons/favicon.svg" />
-<link rel="apple-touch-icon" href="/icons/favicon-192.png" />
+<!-- .ico declared with an explicit size + SVG as scalable: modern browsers
+     prefer the SVG for the tab, while the .ico stays a real fallback and is
+     readable by Google (rel="icon"). (sizes="any" is what let the .ico win.) -->
+<link rel="icon" href="favicon.ico" sizes="32x32" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="favicon-192.png" />
 <meta name="theme-color" content="#050507" />
 <meta property="og:title" content="CYBERDECK.TOOLS" />
 <meta property="og:description" content="A deck of cyberpunk / TTRPG tools." />
