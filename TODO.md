@@ -5,3 +5,4 @@ Items are removed from the list once they are implemented / resolved (no archive
 
 ## ITEMS
 
+1. Update preview png
