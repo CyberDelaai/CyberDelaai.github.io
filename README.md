@@ -37,6 +37,10 @@ Served from the `CyberDelaai/CyberDelaai.github.io` repo via GitHub Pages, with 
 - **Status alignment**: cards are flex columns; the `▸ online _` line uses `margin-top: auto` so it pins to the bottom of every card regardless of description length. Only the `_` after `online` blinks.
 - **Donate button**: a fixed bottom-right "ghost" link. Invisible by default, occasionally flickers into view (`donateGhost` loop); on hover/focus it materializes through a short heavy glitch burst (`donateGlitchIn`) and stays solid. Falls back to a dim static button for touch devices and `prefers-reduced-motion`.
 
+## Support
+
+If you find these tools useful, you can support development here: [boosty.to/cyberdelaai/donate](https://boosty.to/cyberdelaai/donate)
+
 ## License
 
 [MIT](LICENSE) © 2026 CyberDelaai
