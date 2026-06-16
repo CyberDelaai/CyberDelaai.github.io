@@ -8,7 +8,8 @@ The landing page for [cyberdeck.tools](https://cyberdeck.tools/) — a deck of c
 | --- | --- | --- |
 | **COMMLINK** | online | Cyberpunk dialog / chat screenshot constructor. PNG export. → [`/commlink-ui/`](https://cyberdeck.tools/commlink-ui/) |
 | **CHRONOS** | online | Cyberpunk calendar constructor. Different colors, PNG export. → [`/chronos-ui/`](https://cyberdeck.tools/chronos-ui/) |
-| **GRIDMAP** | compiling | TTRPG map utility for tabletop sessions. |
+| **GRIDMAP** | online | Cyberpunk battle-map grid detector. Reports NN×MM, PNG export. → [`/gridmap-ui/`](https://cyberdeck.tools/gridmap-ui/) |
+| **ATLAS** | compiling | Cyberpunk city / region map generator. Hillshade terrain, glowing districts. |
 | **EIDOLON** | compiling | Token / avatar maker for TTRPG characters. |
 | **SINFORGE** | compiling | Cyberpunk document constructor. ID cards, badges, keycards. |
 
