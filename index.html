@@ -112,6 +112,89 @@
   .card.live .status { color: var(--cyan); }
   .card.soon { opacity: .6; cursor: default; }
   .card.soon .status { color: var(--magenta); }
+  /* Corrupted card — broken "program" slot. augmented-ui owns the card's
+     clip-path and ::before/::after, so all glitch layers live on inner
+     elements (.noise, .name::before/::after); the card itself only gets
+     transform / opacity / filter jitter. */
+  .card.corrupt {
+    --card-border: rgba(255, 0, 60, 0.55);
+    cursor: default;
+    overflow: hidden;
+    animation: corruptJitter 5s steps(1) infinite;
+  }
+  .card.corrupt .name {
+    position: relative;
+    color: var(--magenta);
+    text-shadow: 2px 0 rgba(0,240,255,.6), -2px 0 rgba(252,238,10,.4);
+  }
+  /* RGB-split slices: two copies of the name, clipped to thin horizontal
+     bands that jump around and shift sideways. */
+  .card.corrupt .name::before,
+  .card.corrupt .name::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    background: var(--panel);
+    pointer-events: none;
+  }
+  .card.corrupt .name::before {
+    color: var(--cyan);
+    text-shadow: -2px 0 var(--magenta);
+    animation: sliceA 2.6s steps(1) infinite;
+  }
+  .card.corrupt .name::after {
+    color: var(--yellow);
+    text-shadow: 2px 0 var(--cyan);
+    animation: sliceB 3.4s steps(1) infinite;
+  }
+  .card.corrupt .desc { color: rgba(122,122,136,.75); }
+  .card.corrupt .status { color: var(--magenta); }
+  .card.corrupt .noise {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      repeating-linear-gradient(0deg, rgba(255,0,60,.06) 0 2px, transparent 2px 4px),
+      linear-gradient(180deg, transparent 0 40%, rgba(0,240,255,.10) 40% 43%, transparent 43% 100%);
+    background-size: 100% 100%, 100% 300%;
+    mix-blend-mode: screen;
+    animation: noiseRoll 3.2s linear infinite, noiseFlicker 1.7s steps(1) infinite;
+  }
+  @keyframes corruptJitter {
+    0%   { transform: none; opacity: .75; filter: none; }
+    62%  { transform: translate(-3px, 1px) skewX(-4deg); opacity: .9; filter: hue-rotate(40deg); }
+    63%  { transform: none; opacity: .75; filter: none; }
+    78%  { transform: translate(4px, -1px); opacity: .35; filter: none; }
+    79%  { transform: translate(-2px, 0) skewX(6deg); opacity: .95; filter: saturate(2); }
+    80%  { transform: none; opacity: .75; filter: none; }
+    94%  { transform: translateX(2px); opacity: .5; filter: hue-rotate(-60deg); }
+    95%  { transform: none; opacity: .75; filter: none; }
+  }
+  @keyframes sliceA {
+    0%   { clip-path: inset(0 0 100% 0); transform: none; }
+    20%  { clip-path: inset(10% 0 65% 0); transform: translateX(-4px); }
+    24%  { clip-path: inset(0 0 100% 0); transform: none; }
+    55%  { clip-path: inset(60% 0 15% 0); transform: translateX(5px); }
+    58%  { clip-path: inset(30% 0 50% 0); transform: translateX(-2px); }
+    61%  { clip-path: inset(0 0 100% 0); transform: none; }
+    88%  { clip-path: inset(45% 0 35% 0); transform: translateX(3px); }
+    91%  { clip-path: inset(0 0 100% 0); transform: none; }
+  }
+  @keyframes sliceB {
+    0%   { clip-path: inset(0 0 100% 0); transform: none; }
+    33%  { clip-path: inset(70% 0 5% 0); transform: translateX(4px); }
+    36%  { clip-path: inset(20% 0 60% 0); transform: translateX(-5px); }
+    39%  { clip-path: inset(0 0 100% 0); transform: none; }
+    72%  { clip-path: inset(0 0 75% 0); transform: translateX(-3px); }
+    75%  { clip-path: inset(0 0 100% 0); transform: none; }
+  }
+  @keyframes noiseRoll { from { background-position: 0 0, 0 0; } to { background-position: 0 0, 0 -300%; } }
+  @keyframes noiseFlicker { 0% { opacity: .6; } 30% { opacity: 1; } 32% { opacity: .3; } 70% { opacity: .9; } }
+  @media (prefers-reduced-motion: reduce) {
+    .card.corrupt, .card.corrupt .noise,
+    .card.corrupt .name::before, .card.corrupt .name::after { animation: none; }
+  }
+
   .blink { animation: blink 1.2s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   footer { text-align: center; color: var(--dim); font-size: 11px; letter-spacing: 1px; padding: 24px; border-top: 1px solid rgba(122,122,136,0.2); }
@@ -215,15 +298,19 @@
       </a>
 
       <div class="card soon" data-augmented-ui="tl-clip br-clip border">
-        <div class="name">&gt; ATLAS_</div>
-        <div class="desc">Cyberpunk city / region map generator. Hillshade terrain, glowing districts. PNG export.</div>
-        <div class="status">▸ compiling…</div>
-      </div>
-
-      <div class="card soon" data-augmented-ui="tl-clip br-clip border">
         <div class="name">&gt; SINFORGE_</div>
         <div class="desc">Cyberpunk document constructor. ID cards, badges, keycards.</div>
         <div class="status">▸ compiling…</div>
+      </div>
+
+      <!-- Corrupted placeholder card: pure decoration. JS (bottom of page)
+           swaps random characters in [data-glitch] for katakana in short
+           bursts; CSS handles the jitter, RGB-split slices and noise. -->
+      <div class="card corrupt" aria-hidden="true" data-augmented-ui="tl-clip br-clip border">
+        <div class="noise"></div>
+        <div class="name" data-glitch data-text="&gt; NULL//SECTOR_">&gt; NULL//SECTOR_</div>
+        <div class="desc" data-glitch>Segment fault in ▓▓▓▓. Program image unreadable. Checksum mismatch at 0x7F3A.</div>
+        <div class="status">▸ <span data-glitch>err::signal_lost</span> <span class="blink">█</span></div>
       </div>
     </main>
   </div>
@@ -233,5 +320,45 @@
   <footer>
     CYBERDECK.TOOLS (c) // 2026 // <a href="https://github.com/CyberDelaai">CYBERDELAAI</a> // <a href="https://github.com/CyberDelaai/CyberDelaai.github.io/blob/main/LICENSE">MIT</a>
   </footer>
+
+  <script>
+    // Corrupted card: every so often, swap a few random characters in each
+    // [data-glitch] element for katakana / kanji, then restore. Short bursts
+    // read as data corruption rather than a constant scramble.
+    (function () {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var GLYPHS = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン壊死無空虚断線電脳侵入錯誤';
+      var els = Array.prototype.slice.call(document.querySelectorAll('[data-glitch]'));
+      els.forEach(function (el) { el._orig = el.textContent; });
+
+      function corrupt(el) {
+        var chars = el._orig.split('');
+        var n = 1 + Math.floor(Math.random() * Math.max(2, chars.length / 6));
+        for (var i = 0; i < n; i++) {
+          var j = Math.floor(Math.random() * chars.length);
+          if (chars[j] !== ' ') chars[j] = GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
+        }
+        return chars.join('');
+      }
+      function set(el, text) {
+        el.textContent = text;
+        if (el.hasAttribute('data-text')) el.setAttribute('data-text', text);
+      }
+      // Each burst lands on a fresh checksum address (e.g. 0x7F3A → 0xC01D).
+      function hex() {
+        return '0x' + ('000' + Math.floor(Math.random() * 0x10000).toString(16).toUpperCase()).slice(-4);
+      }
+      function burst(el) {
+        el._orig = el._orig.replace(/0x[0-9A-F]{4}/, hex);
+        var frames = 2 + Math.floor(Math.random() * 5);
+        (function step() {
+          if (frames-- > 0) { set(el, corrupt(el)); setTimeout(step, 50 + Math.random() * 70); }
+          else set(el, el._orig);
+        })();
+        setTimeout(function () { burst(el); }, 600 + Math.random() * 2200);
+      }
+      els.forEach(function (el) { setTimeout(function () { burst(el); }, Math.random() * 1500); });
+    })();
+  </script>
 </body>
 </html>
