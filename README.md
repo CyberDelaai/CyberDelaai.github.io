@@ -25,6 +25,14 @@ start index.html             # Windows
 
 No server needed — augmented-ui and the fonts load from CDN.
 
+## Social preview
+
+`tools-preview.png` (the 1200×630 `og:image` / `twitter:image`) is generated, not screenshotted: a CRT terminal running `deck ls`, with the program list overflowing off-screen. The rows are read from the cards in `index.html`, so regenerate after adding or activating a tool:
+```
+python make_preview.py
+```
+Needs Python 3 + Pillow and a Chromium-based browser (Chrome/Edge, or set `$CHROME`); fonts come from Google Fonts, so it needs a network connection. `--html out.html` keeps the generated page for tweaking, `--seed N` reshuffles the glitch characters.
+
 ## Deployment
 
 Served from the `CyberDelaai/CyberDelaai.github.io` repo via GitHub Pages, with the `cyberdeck.tools` apex domain set in `CNAME`. The sibling tools (`commlink-ui`, `chronos-ui`, …) live at their own paths under the same domain.
