@@ -54,6 +54,15 @@ python make_preview.py
 ```
 Needs Python 3 + Pillow and a Chromium-based browser (Chrome/Edge, or set `$CHROME`); fonts come from Google Fonts, so it needs a network connection. `--html out.html` keeps the generated page for tweaking, `--seed N` reshuffles the glitch characters.
 
+## IndexNow
+
+`indexnow.py` pings [IndexNow](https://www.indexnow.org/) (Bing, Yandex, Seznam, Naver…) so changed pages get re-crawled in minutes. Run it **after** a change is pushed and deployed:
+```
+python indexnow.py                # every URL in sitemap.xml
+python indexnow.py eidolon-ui     # one tool
+```
+The tools' `bump_version.py` print the exact command after a release. The key file `618928754bdb4e2cc19267e1df0c74d8.txt` must stay at the site root — the engines fetch it to verify the pings; keep its name and content in sync with `KEY` in the script.
+
 ## Deployment
 
 Served from the `CyberDelaai/CyberDelaai.github.io` repo via GitHub Pages, with the `cyberdeck.tools` apex domain set in `CNAME`. The sibling tools (`commlink-ui`, `chronos-ui`, …) live at their own paths under the same domain.
