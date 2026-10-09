@@ -59,6 +59,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css" />
+<script>document.documentElement.classList.add('js');</script>
 <style>
   :root {
     --yellow: #fcee0a;
@@ -250,6 +251,30 @@
 
   .blink { animation: blink 1.2s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
+  /* About block under the deck: the copy is in the HTML (readable by search
+     engines and without JS); with JS it stays collapsed until the prompt is
+     clicked, then types itself out like terminal output. */
+  .about { margin-top: 56px; border-top: 1px solid rgba(252,238,10,0.25); padding-top: 28px; }
+  .about h2 { font-weight: 400; font-size: 18px; margin: 0 0 12px; }
+  .about .cmd {
+    font: inherit;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    color: var(--cyan);
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .about .cmd::before { content: '> '; color: var(--yellow); }
+  .about .cmd:hover, .about .cmd:focus-visible { color: var(--yellow); outline: none; text-shadow: 1px 0 var(--magenta), -1px 0 var(--cyan); }
+  .about .cmd .blink { color: var(--yellow); }
+  .about .cmd[aria-expanded="true"] .blink { display: none; }
+  .about p { color: var(--dim); font-size: 14px; max-width: 760px; min-height: 1.5em; }
+  .about p + p { margin-top: 10px; }
+  .about p strong { color: var(--text); font-weight: 400; }
+  .about .caret { color: var(--yellow); }
+  .js .about .out:not(.open) { display: none; }
   footer { text-align: center; color: var(--dim); font-size: 11px; letter-spacing: 1px; padding: 24px; border-top: 1px solid rgba(122,122,136,0.2); }
   footer a { color: var(--dim); }
 
@@ -371,6 +396,17 @@
         <div class="status">▸ <span data-glitch>err::signal_lost</span> <span class="blink">█</span></div>
       </div>
     </main>
+
+    <section class="about">
+      <h2><button class="cmd" type="button" aria-expanded="false" aria-controls="about-out">cat about.txt <span class="blink">_</span></button></h2>
+      <div class="out" id="about-out">
+        <p><strong>CYBERDECK.TOOLS</strong> is a deck of free browser tools for cyberpunk tabletop RPGs —
+          Cyberpunk RED, Cyberpunk 2020, Shadowrun — and for any game master who wants in-world props
+          without opening an image editor.</p>
+        <p>Everything runs locally in your browser: no signup, no upload, no install. Each program exports
+          a clean PNG, ready for Roll20, Foundry VTT, Discord or print.</p>
+      </div>
+    </section>
   </div>
 
   <a class="donate" href="https://boosty.to/cyberdelaai/donate" target="_blank" rel="noopener noreferrer" data-augmented-ui="tl-clip br-clip border">&gt; DONATE_</a>
@@ -458,6 +494,48 @@
             timer = setTimeout(function () { card.classList.remove('waking'); status.innerHTML = locked; }, 550);
           }
         });
+      });
+    })();
+
+    // About block: clicking `cat about.txt` types the (already present) copy
+    // out character by character, then restores the original markup. Clicking
+    // again collapses it. Reduced motion shows it instantly.
+    (function () {
+      var btn = document.querySelector('.about .cmd');
+      var out = document.getElementById('about-out');
+      if (!btn || !out) return;
+      var paras = Array.prototype.slice.call(out.querySelectorAll('p'));
+      var html = paras.map(function (p) { return p.innerHTML; });
+      var text = paras.map(function (p) { return p.textContent.replace(/\s+/g, ' ').trim(); });
+      var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var timer = null;
+
+      function finish() {
+        clearTimeout(timer);
+        paras.forEach(function (p, i) { p.innerHTML = html[i]; });
+      }
+      function type() {
+        paras.forEach(function (p) { p.textContent = ''; });
+        var i = 0, n = 0;
+        (function step() {
+          if (i >= paras.length) return finish();
+          n = Math.min(n + 3, text[i].length);
+          paras[i].innerHTML = '';
+          paras[i].appendChild(document.createTextNode(text[i].slice(0, n)));
+          var caret = document.createElement('span');
+          caret.className = 'caret';
+          caret.textContent = '█';
+          paras[i].appendChild(caret);
+          if (n >= text[i].length) { paras[i].textContent = text[i]; i++; n = 0; timer = setTimeout(step, 180); }
+          else timer = setTimeout(step, 14);
+        })();
+      }
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') !== 'true';
+        btn.setAttribute('aria-expanded', String(open));
+        out.classList.toggle('open', open);
+        if (!open) return finish();
+        if (still) finish(); else type();
       });
     })();
   </script>
