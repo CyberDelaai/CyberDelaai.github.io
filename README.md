@@ -31,9 +31,9 @@ To hide a new pre-1.0 tool this way, write its card as an `<a>` with class `soon
   <div class="status">▸ compiling…</div>
 </a>
 ```
-Keep it out of `sitemap.xml`, the JSON-LD `ItemList` and the meta descriptions while it's hidden, and set its README row to `alpha (hidden)` with the link. `make_preview.py` still lists it as `COMPILING`.
+Do list it in `sitemap.xml` right away, so search engines can find and index it before launch (its `bump_version.py` keeps the hub entry's `<lastmod>` current). Keep it out of the JSON-LD `ItemList` and the meta descriptions while it's hidden, and set its README row to `alpha (hidden)` with the link. `make_preview.py` still lists it as `COMPILING`.
 
-**At 1.0.0**, make it a normal live card: `class="card live"`, drop `data-unlock`, status `▸ online <span class="blink">_</span>`; then add it to the sitemap / JSON-LD / descriptions, set the README row to `online`, and regenerate the preview. (Leftover `cyberdeck:unlocked:<key>` entries in visitors' browsers are harmless.)
+**At 1.0.0**, make it a normal live card: `class="card live"`, drop `data-unlock`, status `▸ online <span class="blink">_</span>`; then add it to the JSON-LD / descriptions (it's already in the sitemap), set the README row to `online`, and regenerate the preview. (Leftover `cyberdeck:unlocked:<key>` entries in visitors' browsers are harmless.)
 
 ## Running it
 
