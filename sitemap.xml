@@ -131,23 +131,479 @@
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/ru/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/fr/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/es/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/it/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/ja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/chronos-ui/zh/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/chronos-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/chronos-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/chronos-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/chronos-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/chronos-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/chronos-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/chronos-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/chronos-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/chronos-ui/" />
   </url>
   <url>
     <loc>https://cyberdeck.tools/gridmap-ui/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/ru/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/fr/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/es/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/it/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/ja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/gridmap-ui/zh/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/gridmap-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/gridmap-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/gridmap-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/gridmap-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/gridmap-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/gridmap-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/gridmap-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/gridmap-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/gridmap-ui/" />
   </url>
   <url>
     <loc>https://cyberdeck.tools/eidolon-ui/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/ru/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/fr/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/es/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/it/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/ja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/eidolon-ui/zh/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/eidolon-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/eidolon-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/eidolon-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/eidolon-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/eidolon-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/eidolon-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/eidolon-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/eidolon-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/eidolon-ui/" />
   </url>
   <url>
     <loc>https://cyberdeck.tools/sinforge-ui/</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/ru/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/fr/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/es/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/it/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/ja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/sinforge-ui/zh/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/sinforge-ui/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/sinforge-ui/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/sinforge-ui/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/sinforge-ui/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/sinforge-ui/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/sinforge-ui/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/sinforge-ui/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/sinforge-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/sinforge-ui/" />
   </url>
 </urlset>
