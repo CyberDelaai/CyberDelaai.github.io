@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CYBERDECK.TOOLS — netrunner toolkit</title>
-<meta name="description" content="A deck of free cyberpunk / TTRPG browser tools: chat screenshot constructor, calendar constructor, battle-map grid detector and token maker. Runs client-side, PNG export." />
+<title>CYBERDECK.TOOLS — Free Cyberpunk TTRPG Browser Tools</title>
+<meta name="description" content="Free cyberpunk / TTRPG browser tools for game masters: chat screenshot constructor, calendar maker, battle-map grid detector and token maker. PNG export." />
+<meta name="author" content="CyberDelaai" />
 <link rel="canonical" href="https://cyberdeck.tools/" />
 <!-- .ico declared with an explicit size + SVG as scalable: modern browsers
      prefer the SVG for the tab, while the .ico stays a real fallback and is
@@ -28,6 +29,32 @@
 <meta name="twitter:description" content="A deck of free cyberpunk / TTRPG browser tools — chat screenshots, calendars, battle-map grids, character tokens. Client-side, PNG export." />
 <meta name="twitter:image" content="https://cyberdeck.tools/tools-preview.png?v=2" />
 <meta name="twitter:image:alt" content="A CRT terminal running the CYBERDECK.TOOLS netrunner toolkit, listing its cyberpunk / TTRPG programs and their status" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cyberdeck.tools/#website",
+      "name": "CYBERDECK.TOOLS",
+      "url": "https://cyberdeck.tools/",
+      "description": "Free cyberpunk / TTRPG browser tools for game masters: chat screenshots, calendars, battle-map grids and character tokens. Client-side, PNG export.",
+      "inLanguage": "en",
+      "author": { "@type": "Person", "name": "CyberDelaai", "url": "https://github.com/CyberDelaai" }
+    },
+    {
+      "@type": "ItemList",
+      "name": "CYBERDECK.TOOLS programs",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "COMMLINK — Cyberpunk Dialog Constructor", "url": "https://cyberdeck.tools/commlink-ui/" },
+        { "@type": "ListItem", "position": 2, "name": "CHRONOS — Cyberpunk Calendar Constructor", "url": "https://cyberdeck.tools/chronos-ui/" },
+        { "@type": "ListItem", "position": 3, "name": "GRIDMAP — TTRPG Battle-Map Grid Detector", "url": "https://cyberdeck.tools/gridmap-ui/" },
+        { "@type": "ListItem", "position": 4, "name": "EIDOLON — Cyberpunk TTRPG Token Maker", "url": "https://cyberdeck.tools/eidolon-ui/" }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
@@ -43,6 +70,7 @@
     --dim: #7a7a88;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   html, body { height: 100%; }
   body {
     background:
@@ -114,6 +142,29 @@
   .card.live .status { color: var(--cyan); }
   .card.soon { opacity: .6; cursor: default; }
   .card.soon .status { color: var(--magenta); }
+  /* Hidden alpha card ([data-unlock], see the script at the bottom). While
+     locked it's a plain "compiling…" card; each click plays .waking — a short
+     burst showing it's actually alive. Once unlocked (.alpha) it reads as
+     live, with an "alpha" status. Like .corrupt: transform / opacity / filter
+     only, since augmented-ui owns the clip-path. */
+  .card.soon[data-unlock] { color: var(--text); }
+  .card.waking { animation: wakeGlitch .55s steps(1) both; }
+  .card.waking .name { color: var(--yellow); text-shadow: 2px 0 var(--magenta), -2px 0 var(--cyan); }
+  .card.waking .status { color: var(--yellow); }
+  .card.alpha .status { color: var(--yellow); }
+  @keyframes wakeGlitch {
+    0%   { opacity: .6; transform: none; filter: none; }
+    8%   { opacity: 1; transform: translate(-4px, 1px) skewX(-6deg); filter: hue-rotate(60deg) saturate(2); }
+    20%  { opacity: .3; transform: translate(3px, -1px); filter: none; }
+    32%  { opacity: 1; transform: translate(-2px, 0) skewX(8deg); filter: hue-rotate(-50deg); }
+    48%  { opacity: .9; transform: translateX(2px); filter: none; }
+    64%  { opacity: 1; transform: none; filter: brightness(1.4); }
+    80%  { opacity: .45; transform: translate(-3px, 1px) skewX(-4deg); filter: hue-rotate(90deg); }
+    100% { opacity: .6; transform: none; filter: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .card.waking { animation: none; opacity: 1; }
+  }
   /* Corrupted card — broken "program" slot. augmented-ui owns the card's
      clip-path and ::before/::after, so all glitch layers live on inner
      elements (.noise, .name::before/::after); the card itself only gets
@@ -270,6 +321,7 @@
 <body>
   <div class="wrap">
     <header>
+      <h1 class="sr-only">CYBERDECK.TOOLS — free cyberpunk TTRPG browser tools for game masters</h1>
       <div class="logo">&gt; CYBERDECK<span style="color:var(--magenta)">.</span>TOOLS_</div>
       <div class="tagline">// netrunner toolkit — load a program</div>
     </header>
@@ -299,11 +351,15 @@
         <div class="status">▸ online <span class="blink">_</span></div>
       </a>
 
-      <div class="card soon" data-augmented-ui="tl-clip br-clip border">
+      <!-- Hidden alpha (< 1.0.0): looks like "compiling…", but it's a real
+           link. Clicks 1–2 glitch it into a flash of its alpha state; click 3
+           opens the tool and remembers the unlock (localStorage). See the
+           "Alpha tools" section of README.md. -->
+      <a class="card soon" href="/sinforge-ui/" data-unlock="sinforge" data-augmented-ui="tl-clip br-clip border">
         <div class="name">&gt; SINFORGE_</div>
         <div class="desc">Cyberpunk document constructor. ID cards, badges, keycards.</div>
         <div class="status">▸ compiling…</div>
-      </div>
+      </a>
 
       <!-- Corrupted placeholder card: pure decoration. JS (bottom of page)
            swaps random characters in [data-glitch] for katakana in short
@@ -360,6 +416,49 @@
         setTimeout(function () { burst(el); }, 600 + Math.random() * 2200);
       }
       els.forEach(function (el) { setTimeout(function () { burst(el); }, Math.random() * 1500); });
+    })();
+
+    // Hidden alpha cards: <a class="card soon" href="…" data-unlock="<key>">.
+    // Clicks 1–2 only glitch the card (.waking) and flash the alpha status;
+    // click 3 saves `cyberdeck:unlocked:<key>` and follows the link. Unlocked
+    // cards render as live with an ALPHA tag on every later visit.
+    (function () {
+      var ALPHA = '▸ online [alpha] <span class="blink">_</span>';
+      var WAKE = '▸ alpha build // online';
+      var CLICKS = 3;
+      function store(key, val) {
+        try { return val === undefined ? localStorage.getItem(key) : localStorage.setItem(key, val); } catch (e) { return null; }
+      }
+      function unlock(card) {
+        card.classList.remove('soon', 'waking');
+        card.classList.add('live', 'alpha');
+        card.querySelector('.status').innerHTML = ALPHA;
+      }
+      Array.prototype.forEach.call(document.querySelectorAll('[data-unlock]'), function (card) {
+        var key = 'cyberdeck:unlocked:' + card.getAttribute('data-unlock');
+        if (store(key) === '1') { unlock(card); return; }
+        var status = card.querySelector('.status'), locked = status.innerHTML;
+        var clicks = 0, timer = null;
+        card.addEventListener('click', function (e) {
+          if (card.classList.contains('alpha')) return;   // unlocked: plain link
+          // Ctrl / Shift / Cmd / middle clicks open the link as usual.
+          if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+          e.preventDefault();
+          clicks++;
+          // Restart the burst even mid-animation.
+          card.classList.remove('waking');
+          void card.offsetWidth;
+          card.classList.add('waking');
+          status.textContent = WAKE;
+          clearTimeout(timer);
+          if (clicks >= CLICKS) {
+            store(key, '1');
+            timer = setTimeout(function () { unlock(card); location.href = card.href; }, 450);
+          } else {
+            timer = setTimeout(function () { card.classList.remove('waking'); status.innerHTML = locked; }, 550);
+          }
+        });
+      });
     })();
   </script>
 </body>

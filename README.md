@@ -10,9 +10,30 @@ The landing page for [cyberdeck.tools](https://cyberdeck.tools/) — a deck of c
 | **CHRONOS** | online | Cyberpunk calendar constructor. Different colors, PNG export. → [`/chronos-ui/`](https://cyberdeck.tools/chronos-ui/) |
 | **GRIDMAP** | online | Cyberpunk battle-map grid detector. Reports NN×MM, PNG export. → [`/gridmap-ui/`](https://cyberdeck.tools/gridmap-ui/) |
 | **EIDOLON** | online | Cyberpunk token / avatar maker for TTRPG characters. Frames, badges, PNG export. → [`/eidolon-ui/`](https://cyberdeck.tools/eidolon-ui/) |
-| **SINFORGE** | compiling | Cyberpunk document constructor. ID cards, badges, keycards. |
+| **SINFORGE** | alpha (hidden) | Cyberpunk document constructor. ID cards, badges, keycards. → [`/sinforge-ui/`](https://cyberdeck.tools/sinforge-ui/) |
 
-Live cards link out to the deployed tool; `compiling…` cards are placeholders for tools not yet shipped.
+Live cards link out to the deployed tool; `compiling…` cards are placeholders for tools not yet shipped. Alpha tools (< 1.0.0) are deployed but hide behind a `compiling…` card — see below.
+
+## Alpha tools (< 1.0.0)
+
+A tool that's deployed but still below `1.0.0` gets a **hidden alpha card**: it looks like `compiling…`, but it's a real link.
+
+- **Clicks 1–2** glitch the card for ~0.5 s (`.waking`) and flash `▸ alpha build // online` — a hint that it's actually alive.
+- **Click 3** saves `cyberdeck:unlocked:<key>` in `localStorage` and opens the tool.
+- **Later visits** (same browser): the card renders as live, with a yellow `▸ online [alpha] _` status.
+- Ctrl / Shift / Cmd / middle clicks open the link straight away without counting; `prefers-reduced-motion` skips the jitter but keeps the counter.
+
+To hide a new pre-1.0 tool this way, write its card as an `<a>` with class `soon` and a `data-unlock` key — the script at the bottom of `index.html` picks up every `[data-unlock]` card, no JS changes needed:
+```html
+<a class="card soon" href="/<tool>-ui/" data-unlock="<tool>" data-augmented-ui="tl-clip br-clip border">
+  <div class="name">&gt; TOOLNAME_</div>
+  <div class="desc">One-line description.</div>
+  <div class="status">▸ compiling…</div>
+</a>
+```
+Keep it out of `sitemap.xml`, the JSON-LD `ItemList` and the meta descriptions while it's hidden, and set its README row to `alpha (hidden)` with the link. `make_preview.py` still lists it as `COMPILING`.
+
+**At 1.0.0**, make it a normal live card: `class="card live"`, drop `data-unlock`, status `▸ online <span class="blink">_</span>`; then add it to the sitemap / JSON-LD / descriptions, set the README row to `online`, and regenerate the preview. (Leftover `cyberdeck:unlocked:<key>` entries in visitors' browsers are harmless.)
 
 ## Running it
 
