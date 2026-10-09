@@ -8,7 +8,7 @@ exact command when a release is ready.
 
 Usage:
     python indexnow.py                     # every URL in sitemap.xml
-    python indexnow.py eidolon-ui          # one tool (folder name ...)
+    python indexnow.py eidolon-ui          # one tool + its language pages (folder name ...)
     python indexnow.py https://cyberdeck.tools/eidolon-ui/   # ... or full URL
 
 The key file (<KEY>.txt, next to this script) must be deployed at the site
@@ -34,14 +34,18 @@ def sitemap_urls():
     return re.findall(r"<loc>([^<]+)</loc>", xml)
 
 
-def to_url(arg):
-    if arg.startswith("http"):
-        return arg
-    return f"https://{HOST}/{arg.strip('/')}/"
+def to_urls(arg, listed):
+    """A tool folder or URL expands to every sitemap URL under it (its
+    language pages too); the hub root stays just the hub root."""
+    base = arg if arg.startswith("http") else f"https://{HOST}/{arg.strip('/')}/"
+    if base == f"https://{HOST}/":
+        return [base]
+    return [u for u in listed if u.startswith(base)] or [base]
 
 
 def main():
-    urls = [to_url(a) for a in sys.argv[1:]] or sitemap_urls()
+    listed = sitemap_urls()
+    urls = [u for a in sys.argv[1:] for u in to_urls(a, listed)] or listed
     bad = [u for u in urls if not u.startswith(f"https://{HOST}/")]
     if bad:
         sys.exit(f"not on {HOST}: {', '.join(bad)}")
