@@ -33,7 +33,7 @@ To hide a new pre-1.0 tool this way, write its card as an `<a>` with class `soon
 ```
 Do list it in `sitemap.xml` right away, so search engines can find and index it before launch (its `bump_version.py` keeps the hub entry's `<lastmod>` current). Keep it out of the JSON-LD `ItemList` and the meta descriptions while it's hidden, and set its README row to `alpha (hidden)` with the link. `make_preview.py` still lists it as `COMPILING`.
 
-**At 1.0.0**, make it a normal live card: `class="card live"`, drop `data-unlock`, status `▸ online <span class="blink">_</span>`; then add it to the JSON-LD / descriptions (it's already in the sitemap), set the README row to `online`, and regenerate the preview. (Leftover `cyberdeck:unlocked:<key>` entries in visitors' browsers are harmless.)
+**At 1.0.0**, make it a normal live card: `class="card live"`, drop `data-unlock`, status `▸ online <span class="blink">_</span>`; then add it to the JSON-LD / descriptions (it's already in the sitemap) — including `TOOL_NAMES` in `make_langs.py` — set the README row to `online`, and re-run `make_langs.py` + `make_preview.py`. (Leftover `cyberdeck:unlocked:<key>` entries in visitors' browsers are harmless.)
 
 ## Running it
 
@@ -46,11 +46,20 @@ start index.html             # Windows
 
 No server needed — augmented-ui and the fonts load from CDN.
 
+## Languages
+
+The hub exists in 8 languages: `/` (English) plus `ru/`, `fr/`, `de/`, `es/`, `it/`, `ja/`, `zh/`. The language folders are **generated** by `make_langs.py` from `index.html` — never edit them. Each is a fully translated static copy (strings from the table at the top of the script) with its own canonical / hreflang / og:locale / JSON-LD, and its tool cards link to the same language's tool pages (`/commlink-ui/ru/` …). The script also rewrites the hub's own entries in `sitemap.xml`. The `EN ▾` picker in the header switches between them. **After any `index.html` change run:**
+```
+python make_langs.py
+```
+If you change a string that the table translates (title, tagline, card descriptions, the about text), update its `EN` source line and the translations too — the script stops with an error when an English source string isn't found.
+
 ## Social preview
 
-`tools-preview.png` (the 1200×630 `og:image` / `twitter:image`) is generated, not screenshotted: a CRT terminal running `deck ls`, with the program list overflowing off-screen. The rows are read from the cards in `index.html`, so regenerate after adding or activating a tool:
+`previews/og-<lang>.png` (the 1200×630 `og:image` / `twitter:image`, one per language) are generated, not screenshotted: a CRT terminal running `deck ls`, with the program list overflowing off-screen. The tagline and the rows are read from each language's page (shell commands stay English), so regenerate after adding or activating a tool or changing the copy, then re-run `make_langs.py` so every page points at its image:
 ```
-python make_preview.py
+python make_preview.py          # all languages
+python make_preview.py ru ja    # just these
 ```
 Needs Python 3 + Pillow and a Chromium-based browser (Chrome/Edge, or set `$CHROME`); fonts come from Google Fonts, so it needs a network connection. `--html out.html` keeps the generated page for tweaking, `--seed N` reshuffles the glitch characters.
 

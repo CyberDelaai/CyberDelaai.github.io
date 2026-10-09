@@ -5,6 +5,120 @@
     <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/ru/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/fr/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/de/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/es/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/it/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/ja/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
+  </url>
+  <url>
+    <loc>https://cyberdeck.tools/zh/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://cyberdeck.tools/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://cyberdeck.tools/ru/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://cyberdeck.tools/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://cyberdeck.tools/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://cyberdeck.tools/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://cyberdeck.tools/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://cyberdeck.tools/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://cyberdeck.tools/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://cyberdeck.tools/" />
   </url>
   <url>
     <loc>https://cyberdeck.tools/commlink-ui/</loc>
