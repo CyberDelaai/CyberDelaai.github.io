@@ -10,7 +10,7 @@ The landing page for [cyberdeck.tools](https://cyberdeck.tools/) — a deck of c
 | **CHRONOS** | online | Cyberpunk calendar constructor. Different colors, PNG export. → [`/chronos-ui/`](https://cyberdeck.tools/chronos-ui/) |
 | **GRIDMAP** | online | Cyberpunk battle-map grid detector. Reports NN×MM, PNG export. → [`/gridmap-ui/`](https://cyberdeck.tools/gridmap-ui/) |
 | **EIDOLON** | online | Cyberpunk token / avatar maker for TTRPG characters. Frames, badges, PNG export. → [`/eidolon-ui/`](https://cyberdeck.tools/eidolon-ui/) |
-| **SINFORGE** | alpha (hidden) | Cyberpunk document constructor. ID cards, badges, keycards. → [`/sinforge-ui/`](https://cyberdeck.tools/sinforge-ui/) |
+| **SINFORGE** | online | Cyberpunk document constructor. ID cards, badges, keycards. → [`/sinforge-ui/`](https://cyberdeck.tools/sinforge-ui/) |
 
 Live cards link out to the deployed tool; `compiling…` cards are placeholders for tools not yet shipped. Alpha tools (< 1.0.0) are deployed but hide behind a `compiling…` card — see below.
 

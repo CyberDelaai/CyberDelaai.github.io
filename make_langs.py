@@ -39,10 +39,10 @@ TOOLS = ["commlink-ui", "chronos-ui", "gridmap-ui", "eidolon-ui", "sinforge-ui"]
 # keys of the translation table below.
 EN = {
     "title": "CYBERDECK.TOOLS — Free Cyberpunk TTRPG Browser Tools",
-    "desc": "Free cyberpunk / TTRPG browser tools for game masters: chat screenshot constructor, calendar maker, battle-map grid detector and token maker. PNG export.",
-    "og_desc": "A deck of free cyberpunk / TTRPG browser tools — chat screenshots, calendars, battle-map grids, character tokens. Client-side, PNG export.",
+    "desc": "Free cyberpunk / TTRPG browser tools for game masters: chat screenshots, calendars, battle-map grid detector, token and ID card makers. PNG export.",
+    "og_desc": "A deck of free cyberpunk / TTRPG browser tools — chat screenshots, calendars, battle-map grids, character tokens, ID cards. Client-side, PNG export.",
     "alt": "A CRT terminal running the CYBERDECK.TOOLS netrunner toolkit, listing its cyberpunk / TTRPG programs and their status",
-    "site_desc": "Free cyberpunk / TTRPG browser tools for game masters: chat screenshots, calendars, battle-map grids and character tokens. Client-side, PNG export.",
+    "site_desc": "Free cyberpunk / TTRPG browser tools for game masters: chat screenshots, calendars, battle-map grids, character tokens and ID cards. Client-side, PNG export.",
     "list_name": "CYBERDECK.TOOLS programs",
     "h1": "CYBERDECK.TOOLS — free cyberpunk TTRPG browser tools for game masters",
     "tagline": "// netrunner toolkit — load a program",
@@ -63,8 +63,8 @@ EN = {
 T = {
     "ru": {
         "title": "CYBERDECK.TOOLS — бесплатные киберпанк-инструменты для НРИ",
-        "desc": "Бесплатные браузерные инструменты для мастеров НРИ в стиле киберпанк: скриншоты переписки, календари, сетка боевых карт и токены. Экспорт PNG.",
-        "og_desc": "Сборка бесплатных браузерных инструментов для киберпанк-НРИ: скриншоты переписки, календари, сетка боевых карт, токены персонажей. Экспорт PNG.",
+        "desc": "Бесплатные браузерные инструменты для мастеров киберпанк-НРИ: скриншоты переписки, календари, сетка боевых карт, токены и удостоверения. Экспорт PNG.",
+        "og_desc": "Сборка бесплатных браузерных инструментов для киберпанк-НРИ: скриншоты переписки, календари, сетка боевых карт, токены, удостоверения. Экспорт PNG.",
         "alt": "CRT-терминал с запущенным набором нетраннера CYBERDECK.TOOLS: список киберпанк-программ для НРИ и их статус",
         "list_name": "Программы CYBERDECK.TOOLS",
         "h1": "CYBERDECK.TOOLS — бесплатные киберпанк-инструменты для мастеров НРИ",
@@ -80,8 +80,8 @@ T = {
     },
     "fr": {
         "title": "CYBERDECK.TOOLS — Outils cyberpunk gratuits pour le JDR",
-        "desc": "Outils de navigateur gratuits pour MJ de JDR cyberpunk : captures de chat, calendriers, détection de grille de cartes de combat et jetons. Export PNG.",
-        "og_desc": "Un deck d'outils de navigateur gratuits pour le JDR cyberpunk : captures de chat, calendriers, grilles de cartes de combat, jetons de personnage. Export PNG.",
+        "desc": "Outils de navigateur gratuits pour MJ de JDR cyberpunk : captures de chat, calendriers, grilles de cartes de combat, jetons et cartes d'identité. Export PNG.",
+        "og_desc": "Un deck d'outils de navigateur gratuits pour le JDR cyberpunk : captures de chat, calendriers, grilles de combat, jetons, cartes d'identité. Export PNG.",
         "alt": "Un terminal CRT qui exécute la boîte à outils du netrunner CYBERDECK.TOOLS et liste ses programmes cyberpunk / JDR",
         "list_name": "Programmes CYBERDECK.TOOLS",
         "h1": "CYBERDECK.TOOLS — outils cyberpunk gratuits pour les MJ de JDR",
@@ -97,8 +97,8 @@ T = {
     },
     "de": {
         "title": "CYBERDECK.TOOLS — Kostenlose Cyberpunk-Rollenspiel-Tools",
-        "desc": "Kostenlose Browser-Tools für Cyberpunk-Spielleiter: Chat-Screenshots, Kalender, Battlemap-Raster-Erkennung und Token-Ersteller. PNG-Export.",
-        "og_desc": "Ein Deck kostenloser Browser-Tools für Cyberpunk-Rollenspiele: Chat-Screenshots, Kalender, Battlemap-Raster, Charakter-Tokens. Läuft im Browser, PNG-Export.",
+        "desc": "Kostenlose Browser-Tools für Cyberpunk-Spielleiter: Chat-Screenshots, Kalender, Battlemap-Raster-Erkennung, Token- und Ausweis-Ersteller. PNG-Export.",
+        "og_desc": "Ein Deck kostenloser Browser-Tools für Cyberpunk-Rollenspiele: Chat-Screenshots, Kalender, Battlemap-Raster, Tokens, Ausweise. Läuft im Browser, PNG-Export.",
         "alt": "Ein CRT-Terminal mit dem Netrunner-Toolkit CYBERDECK.TOOLS, das seine Cyberpunk- und Rollenspiel-Programme und ihren Status auflistet",
         "list_name": "CYBERDECK.TOOLS-Programme",
         "h1": "CYBERDECK.TOOLS — kostenlose Cyberpunk-Tools für Spielleiter",
@@ -114,8 +114,8 @@ T = {
     },
     "es": {
         "title": "CYBERDECK.TOOLS — Herramientas cyberpunk gratis para rol",
-        "desc": "Herramientas de navegador gratuitas para másteres de rol cyberpunk: capturas de chat, calendarios, cuadrículas de mapas y tokens. Exportación PNG.",
-        "og_desc": "Un mazo de herramientas de navegador gratuitas para rol cyberpunk: capturas de chat, calendarios, cuadrículas de mapas de batalla y tokens. Exportación PNG.",
+        "desc": "Herramientas de navegador gratuitas para másteres de rol cyberpunk: capturas de chat, calendarios, cuadrículas de mapas, tokens y carnés. Exportación PNG.",
+        "og_desc": "Un mazo de herramientas de navegador gratuitas para rol cyberpunk: capturas de chat, calendarios, cuadrículas de mapas, tokens y carnés. Exportación PNG.",
         "alt": "Un terminal CRT que ejecuta el kit del netrunner CYBERDECK.TOOLS y lista sus programas cyberpunk / de rol",
         "list_name": "Programas de CYBERDECK.TOOLS",
         "h1": "CYBERDECK.TOOLS — herramientas cyberpunk gratuitas para másteres de rol",
@@ -131,8 +131,8 @@ T = {
     },
     "it": {
         "title": "CYBERDECK.TOOLS — Strumenti cyberpunk gratuiti per GDR",
-        "desc": "Strumenti gratuiti nel browser per master di GDR cyberpunk: screenshot di chat, calendari, griglie per mappe di battaglia e token. Esportazione PNG.",
-        "og_desc": "Un mazzo di strumenti gratuiti nel browser per GDR cyberpunk: screenshot di chat, calendari, griglie di mappe di battaglia, token. Esportazione PNG.",
+        "desc": "Strumenti gratuiti nel browser per master di GDR cyberpunk: screenshot di chat, calendari, griglie per mappe di battaglia, token e documenti. Esportazione PNG.",
+        "og_desc": "Un mazzo di strumenti gratuiti nel browser per GDR cyberpunk: screenshot di chat, calendari, griglie di mappe, token, carte d'identità. Esportazione PNG.",
         "alt": "Un terminale CRT che esegue il toolkit del netrunner CYBERDECK.TOOLS ed elenca i suoi programmi cyberpunk / GDR",
         "list_name": "Programmi di CYBERDECK.TOOLS",
         "h1": "CYBERDECK.TOOLS — strumenti cyberpunk gratuiti per master di GDR",
@@ -148,8 +148,8 @@ T = {
     },
     "ja": {
         "title": "CYBERDECK.TOOLS — 無料のサイバーパンクTRPGツール集",
-        "desc": "サイバーパンクTRPGのGM向け無料ブラウザツール集：チャットスクリーンショット、カレンダー、戦闘マップのグリッド検出、トークン作成。PNG書き出し対応。",
-        "og_desc": "サイバーパンクTRPG向けの無料ブラウザツール集。チャット画像、カレンダー、戦闘マップのグリッド、キャラクタートークン。ブラウザ完結、PNG書き出し。",
+        "desc": "サイバーパンクTRPGのGM向け無料ブラウザツール集：チャットスクリーンショット、カレンダー、戦闘マップのグリッド検出、トークン・IDカード作成。PNG書き出し対応。",
+        "og_desc": "サイバーパンクTRPG向けの無料ブラウザツール集。チャット画像、カレンダー、戦闘マップのグリッド、キャラクタートークン、IDカード。ブラウザ完結、PNG書き出し。",
         "alt": "CYBERDECK.TOOLSのネットランナー・ツールキットを実行するCRT端末。サイバーパンクTRPG用プログラムとその状態の一覧",
         "list_name": "CYBERDECK.TOOLSのプログラム",
         "h1": "CYBERDECK.TOOLS — GM向け無料サイバーパンクTRPGツール集",
@@ -165,8 +165,8 @@ T = {
     },
     "zh": {
         "title": "CYBERDECK.TOOLS — 免费赛博朋克跑团工具集",
-        "desc": "面向赛博朋克跑团主持人的免费浏览器工具：聊天截图、日历、战斗地图网格检测和令牌制作，均可导出 PNG。",
-        "og_desc": "一套免费的赛博朋克跑团浏览器工具：聊天截图、日历、战斗地图网格、角色令牌。全部在浏览器中运行，导出 PNG。",
+        "desc": "面向赛博朋克跑团主持人的免费浏览器工具：聊天截图、日历、战斗地图网格检测、令牌和证件制作，均可导出 PNG。",
+        "og_desc": "一套免费的赛博朋克跑团浏览器工具：聊天截图、日历、战斗地图网格、角色令牌、身份证件。全部在浏览器中运行，导出 PNG。",
         "alt": "运行 CYBERDECK.TOOLS 网络行者工具包的 CRT 终端，列出其赛博朋克跑团程序及状态",
         "list_name": "CYBERDECK.TOOLS 程序",
         "h1": "CYBERDECK.TOOLS — 面向主持人的免费赛博朋克跑团工具",
@@ -188,6 +188,7 @@ TOOL_NAMES = {
     "chronos-ui": {"ru": "CHRONOS — конструктор киберпанк-календарей", "fr": "CHRONOS — Constructeur de calendrier cyberpunk", "de": "CHRONOS — Cyberpunk-Kalender-Konstruktor", "es": "CHRONOS — Constructor de calendarios cyberpunk", "it": "CHRONOS — Costruttore di calendari cyberpunk", "ja": "CHRONOS — サイバーパンク風カレンダーメーカー", "zh": "CHRONOS — 赛博朋克日历生成器"},
     "gridmap-ui": {"ru": "GRIDMAP — детектор сетки боевых карт", "fr": "GRIDMAP — Détecteur de grille de carte de combat", "de": "GRIDMAP — Battlemap-Raster-Erkennung", "es": "GRIDMAP — Detector de cuadrícula de mapas de batalla", "it": "GRIDMAP — Rilevatore di griglia per mappe di battaglia", "ja": "GRIDMAP — 戦闘マップのグリッド検出", "zh": "GRIDMAP — 战斗地图网格检测器"},
     "eidolon-ui": {"ru": "EIDOLON — конструктор киберпанк-токенов", "fr": "EIDOLON — Créateur de jetons JDR cyberpunk", "de": "EIDOLON — Cyberpunk-Token-Ersteller", "es": "EIDOLON — Creador de tokens cyberpunk", "it": "EIDOLON — Creatore di token cyberpunk", "ja": "EIDOLON — サイバーパンク風トークンメーカー", "zh": "EIDOLON — 赛博朋克令牌制作器"},
+    "sinforge-ui": {"ru": "SINFORGE — генератор киберпанк-удостоверений", "fr": "SINFORGE — Cartes d'identité et badges cyberpunk", "de": "SINFORGE — Cyberpunk-Ausweis- & Badge-Generator", "es": "SINFORGE — Carnés y acreditaciones cyberpunk", "it": "SINFORGE — Carte d'identità e pass cyberpunk", "ja": "SINFORGE — サイバーパンク風IDカードメーカー", "zh": "SINFORGE — 赛博朋克身份证生成器"},
 }
 
 HREFLANG_START = "<!-- hreflang: generated by make_langs.py -->"
